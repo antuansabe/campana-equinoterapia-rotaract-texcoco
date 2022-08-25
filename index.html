@@ -10,7 +10,7 @@
 <body>
    <header>
     <img src="img/logo.png" alt="logotipo rotaract">
-    <div>
+    <div class="headerMenu">
         <a href="#">Inicio</a>
         <a href="#">Quienes somos</a>
         <a href="#">Proyectos</a>
@@ -19,8 +19,10 @@
    </header>
    <main>
     <div class="cabeceraFoto">
-        <img src="img/cabecera.jpg" alt="fotografia de gente ayudando">
-        <p>Darde Sí antes <br> de Pensar en Sí. </p>
+        <div class="cabeceraDiv">
+            <img src="img/cabecera.jpg" class="cabeceraFotoImg" alt="fotografia de gente ayudando">
+            <p>Darde Sí antes <br> de Pensar en Sí. </p>
+        </div>
     </div>
     <div class="faqRota">
         <h1>¿Que es Rotaract?</h1>
@@ -30,55 +32,76 @@
         <h2>Campañas de Rotaract Texcoco</h2>
         <div class="proyecto01">
             <div class="equinoTexto">
-                <h3>Equinoterapias</h3>
+                <h4>Equinoterapias</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis cum accusantium, voluptas, natus necessitatibus qui laudantium non deleniti inventore aliquam id? Eos quia magni consequatur molestiae, tenetur officia quae consequuntur?</p>
             </div>
-            <img src="img/proyecto01.jpg" alt="proyecto">
+            <img src="img/proyecto01.png" alt="proyecto">
         </div>
         <div class="proyecto02">
             <div class="tapitasTexto">
-                <h3>Recolección de tapitas</h3>
+                <h4>Recolección de tapitas</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis cum accusantium, voluptas, natus necessitatibus qui laudantium non deleniti inventore aliquam id? Eos quia magni consequatur molestiae, tenetur officia quae consequuntur?</p>
             </div>
-            <img src="img/proyecto02.jpg" alt="proyecto">
+            <img src="img/proyecto02.jpeg" alt="proyecto">
         </div>
         <div class="proyecto03">
-            <div class="pelucasTexto">
-                <h3>Pelucas oncológicas</h3>
+            <div class="comunitarioTexto">
+                <h4>Proyectos comunitarios</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis cum accusantium, voluptas, natus necessitatibus qui laudantium non deleniti inventore aliquam id? Eos quia magni consequatur molestiae, tenetur officia quae consequuntur?</p>
             </div>
-            <img src="img/proyecto03.jpg" alt="proyecto">
+            <img src="img/proyecto03.jpeg" alt="proyecto">
+        </div>
+        <div class="proyecto04">
+            <div class="comedorTexto">
+                <h4>Comedor comunitario</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis cum accusantium, voluptas, natus necessitatibus qui laudantium non deleniti inventore aliquam id? Eos quia magni consequatur molestiae, tenetur officia quae consequuntur?</p>
+            </div>
+            <img src="img/proyecto04.jpeg" alt="proyecto">
         </div>
     </div>
 
     <div class="formulario">
         <h4>Contacto</h4>
-        <form action="">
-            <p>Nombre</p>
-            <p>Mail</p>
-            <p>Asunto</p>
+        <form action="/unodos" method="post">
+            <ul>
+                <li>
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="user_name">
+                </li>
+                <li>
+                    <label for="mail">Correo electronico:</label>
+                    <input type="email" id="mail" name="user_mail">
+                </li>
+                <li>
+                    <label for="msg">Mensaje:</label>
+                    <textarea id="msg" name="user_message" id="" cols="30" rows="10"></textarea>
+                </li>
+                <li class="button">
+                    <button type="submit">Enviar mensaje</button>
+                </li>
+            </ul>
         </form>
     </div>
 
    </main> 
    <footer>
-    <div>
-        <div> 
+    <div class="footerTop">
+        <div class="logoFooter"> 
             <img src="img/logo.png" alt="logotipo">
         </div>
-        <div>
+        <div class="linksFooter">
             <ul>
                 <li><a href="#">Terminos y condiciones</a></li>
                 <li><a href="https://www.rotary.org/es">Rotary.org</a></li>
                 <li><a href="#">Politicas de privacidad</a></li>
             </ul>
         </div>
-        <div>
-            <a href="https://www.facebook.com/rotaractclubtexcoco">FB</a>
-            <a href="https://www.instagram.com/rotaract_texcoco/">IG</a>
+        <div class="redes">
+            <a href="https://www.facebook.com/rotaractclubtexcoco"><img src="img/fb.png" alt="logo facebook"></a>
+            <a href="https://www.instagram.com/rotaract_texcoco/"><img src="img/ig.png" alt="logo instagram"></a>
         </div>
     </div>
-    <div>
+    <div class="pieDePagina">
         <p>Hecho con 💛 | Rotaract Club Texcoco 2022</p>
     </div>
    </footer>

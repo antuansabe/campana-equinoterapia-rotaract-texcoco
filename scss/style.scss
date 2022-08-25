@@ -1,8 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Merriweather:wght@300&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @import "utilities/mixin";
 * {margin: 0px; padding: 0px;}
-header {
-    background-color: $rosa-rota;
+body {
+   // font-family: 'Lora', serif;
+   // font-family: 'Merriweather', serif;
+   // font-family: 'Roboto', sans-serif;
+
+   // --------- CABECERA
+    header {
+        background-color: $rosa-rota;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img {
+            width: 300px;
+        }
+        .headerMenu {
+            a {
+                font-family: 'Roboto', sans-serif;
+                text-decoration: none;
+                font-weight: 600;
+                color: $withe; 
+                margin-left: 20px;
+            }
+        }
+    }
+    main {
+        .cabeceraFoto {
+            .cabeceraDiv {
+                position: relative;
+                .cabeceraFotoImg {
+                    position: absolute;
+                    width: 100%;
+                }
+                p {
+                    position: absolute;
+                }
+            }
+        }
+        .faqRota {
+            
+        }
+    }
+    // --------- PROYECTOS
+
+    footer {
+        background-color: $rosa-rota;
+    }
 }
-footer {
-    background-color: $rosa-rota;
-}
+
+
+
+
+
+// --------- FORMULARIO
+
+// --------- FOOTER
