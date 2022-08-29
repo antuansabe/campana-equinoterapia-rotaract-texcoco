@@ -1,3 +1,36 @@
 $rosa-rota: rgb(247, 0, 75);
 $black: rgb(9, 9, 9);
 $withe: rgb(243, 242, 242);
+
+// Display row reverse {
+    @mixin rowReverse {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+// Display column {
+    @mixin displayColumn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+// Ajustes estandar para cajas de actividades
+@mixin boxAct {
+    border-radius: 20px;
+    display: flex;
+    margin: 40px auto 0 auto;
+    padding: 40px;
+    width: 800px;
+    height: auto;
+    box-shadow: 2px 2px 20px 4px rgb(167, 167, 167);
+}
+@mixin boxActMobile {
+    
+}
+// Ajustes estandar para imagenes de actividades
+
+@mixin imgActividad {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px 4px rgb(167, 167, 167);
+}

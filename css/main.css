@@ -3,6 +3,9 @@
   margin: 0px;
   padding: 0px; }
 
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  font-family: 'Roboto', sans-serif; }
+
 body header {
   background-color: #f7004b;
   display: flex;
@@ -15,15 +18,95 @@ body header {
     text-decoration: none;
     font-weight: 600;
     color: #f3f2f2;
-    margin-left: 20px; }
+    margin: 0 30px 0 20px; }
 
-body main .cabeceraFoto .cabeceraDiv {
-  position: relative; }
-  body main .cabeceraFoto .cabeceraDiv .cabeceraFotoImg {
-    position: absolute;
-    width: 100%; }
-  body main .cabeceraFoto .cabeceraDiv p {
-    position: absolute; }
+body main .cabeceraFoto .cabeceraDiv .cabeceraFotoImg {
+  width: 100%; }
+
+body main .cabeceraFoto .cabeceraDiv p {
+  display: none; }
+
+body main .proyectos .proyecto01 {
+  border-radius: 20px;
+  display: flex;
+  margin: 40px auto 0 auto;
+  padding: 40px;
+  width: 800px;
+  height: auto;
+  box-shadow: 2px 2px 20px 4px #a7a7a7; }
+  body main .proyectos .proyecto01 .equinoTexto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  body main .proyectos .proyecto01 img {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px 4px #a7a7a7;
+    margin: 0 0 0 20px; }
+
+body main .proyectos .proyecto02 {
+  border-radius: 20px;
+  display: flex;
+  margin: 40px auto 0 auto;
+  padding: 40px;
+  width: 800px;
+  height: auto;
+  box-shadow: 2px 2px 20px 4px #a7a7a7;
+  display: flex;
+  flex-direction: row-reverse; }
+  body main .proyectos .proyecto02 .tapitasTexto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right; }
+  body main .proyectos .proyecto02 img {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px 4px #a7a7a7;
+    margin: 0 20px 0 0; }
+
+body main .proyectos .proyecto03 {
+  border-radius: 20px;
+  display: flex;
+  margin: 40px auto 0 auto;
+  padding: 40px;
+  width: 800px;
+  height: auto;
+  box-shadow: 2px 2px 20px 4px #a7a7a7; }
+  body main .proyectos .proyecto03 .comunitarioTexto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  body main .proyectos .proyecto03 img {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px 4px #a7a7a7;
+    margin: 0 0px 0 20px; }
+
+body main .proyectos .proyecto04 {
+  border-radius: 20px;
+  display: flex;
+  margin: 40px auto 0 auto;
+  padding: 40px;
+  width: 800px;
+  height: auto;
+  box-shadow: 2px 2px 20px 4px #a7a7a7;
+  display: flex;
+  flex-direction: row-reverse; }
+  body main .proyectos .proyecto04 .comedorTexto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right; }
+  body main .proyectos .proyecto04 img {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px 4px #a7a7a7;
+    margin: 0 20px 0 0px; }
 
 body footer {
   background-color: #f7004b; }

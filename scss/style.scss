@@ -5,7 +5,9 @@ body {
    // font-family: 'Lora', serif;
    // font-family: 'Merriweather', serif;
    // font-family: 'Roboto', sans-serif;
-
+h1, h2, h3, h4, h5, h6 {
+       font-family: 'Roboto', sans-serif;
+}
    // --------- CABECERA
     header {
         background-color: $rosa-rota;
@@ -21,29 +23,113 @@ body {
                 text-decoration: none;
                 font-weight: 600;
                 color: $withe; 
-                margin-left: 20px;
+                margin: 0 30px 0 20px;
             }
         }
     }
     main {
         .cabeceraFoto {
             .cabeceraDiv {
-                position: relative;
                 .cabeceraFotoImg {
-                    position: absolute;
                     width: 100%;
                 }
                 p {
-                    position: absolute;
+                    display: none;
                 }
             }
         }
         .faqRota {
-            
-        }
-    }
-    // --------- PROYECTOS
+            h1 {
 
+            }
+            p {
+
+            }
+        }
+    // --------- PROYECTOS -----------------------------
+        .proyectos {
+            h2 {
+
+            }
+            .proyecto01 {
+                @include boxAct;
+                .equinoTexto {
+                    @include displayColumn;
+                    h4 {
+
+                    }
+                    p {
+
+                    }
+                }
+                img {
+                    @include imgActividad; 
+                    margin: 0 0 0 20px;
+                }
+            }
+            .proyecto02 {
+                @include boxAct;
+                @include rowReverse;
+                .tapitasTexto {
+                    @include displayColumn;
+                    text-align: right;
+                    h4 {
+
+                    }
+                    p {
+
+                    }
+                }
+                img {
+                    @include imgActividad;
+                    margin: 0 20px 0 0; 
+                }
+            }
+            .proyecto03 {
+                @include boxAct;
+                .comunitarioTexto {
+                    @include displayColumn;
+                    
+                    h4 {
+
+                    }
+                    p {
+
+                    }
+                }
+                img {
+                    @include imgActividad; 
+                    margin: 0 0px 0 20px;
+                }
+            }
+            .proyecto04 {
+                @include boxAct;
+                @include rowReverse;
+                .comedorTexto {
+                    @include displayColumn;
+                    text-align: right;
+                    h4 {
+
+                    }
+                    p {
+
+                    }
+                }
+                img {
+                    @include imgActividad;
+                    margin: 0 20px 0 0px;  
+                }
+            }
+        }
+
+    // --------- FORMULARIO -----------------------------
+        .formulario {
+
+        }
+        
+    }
+
+    // --------- FOOTER -----------------------------
     footer {
         background-color: $rosa-rota;
     }
@@ -53,6 +139,4 @@ body {
 
 
 
-// --------- FORMULARIO
 
-// --------- FOOTER
