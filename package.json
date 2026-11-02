@@ -21,7 +21,7 @@
   "homepage": "https://github.com/Feelshot/campana-equinoterapia-rotaract-texcoco#readme",
   "devDependencies": {
     "nodemon": "^3.1.14",
-    "sass": "^1.106.1"
+    "sass": "^1.107.0"
   },
   "engines": {
     "node": ">=24.22.1 <25"
